@@ -94,7 +94,7 @@ const addValues = (arr, value) => {
 
 const addNumbers = (num, arr, numberOfTimes, callback) => {
   for (let i=0; i < numberOfTimes; i++) {
-    addValues(arr, num);
+    callback(arr, num);
   }
   return arr;
 };
