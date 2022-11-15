@@ -24,9 +24,9 @@ Returns: ['dyoll', 'eimaj'];
 
 const getNames = (arr) => {
   // Solution code here...
-  return arr.map(obj => {
-    let arr = obj.name.split('');
-    return arr.reduce( (total, letter) => letter + total, '');
+  return arr.map(anyVariableName => {
+    let arr = anyVariableName.name.split('');
+    return arr.reduce( (a, b) => b + a, '');
   });
 };
 
