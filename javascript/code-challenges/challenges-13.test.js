@@ -43,7 +43,7 @@ For example, (123) 456-7890 returns 1234567890
 ------------------------------------------------------------------------------------------------ */
 
 const standardizePhoneNumbers = (arr) => {
-  // Solution code here...
+  return arr.map(phone => phone.replace(/\(|\)|-| /g, ''));
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -65,7 +65,7 @@ Write a function named allHappy that takes in an array of strings and returns a 
 ------------------------------------------------------------------------------------------------ */
 
 const allHappy = (arr) => {
-  // Solution code here...
+  return arr.reduce((status, item) => item.includes(':)') ? status : status = false, true);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -75,7 +75,7 @@ Write a function named findAnything that takes in an array of strings, along wit
 ------------------------------------------------------------------------------------------------ */
 
 const findAnything = (arr, target) => {
-  // Solution code here...
+  // Soultion
 };
 
 /* ------------------------------------------------------------------------------------------------
